@@ -47,16 +47,21 @@ namespace LPADWithCSharp
 
         private void label3_Click(object sender, EventArgs e)
         {
+            progressSp.Visible = true;
             string path = @"LDAP://UIOSVR2K8:389/DC=INFORMATICA,DC=COM";       //CAMBIAR POR VUESTRO PATH (URL DEL SERVICIO DE DIRECTORIO LDAP)
             //Por ejemplo: 'LDAP://ejemplo.lan.es'
             string dominio = @"informatica";             //CAMBIAR POR VUESTRO DOMINIO
             string usu = user.Text.Trim();                   //USUARIO DEL DOMINIO
             string pass = passw.Text.Trim();                    //PASSWORD DEL USUARIO
+            string aux = "";
             string domUsu = dominio + @"\" + usu;               //CADENA DE DOMINIO + USUARIO A COMPROBAR
-            
+            progressSp.Visible=true;
             bool permiso = AutenticaUsuario(path, domUsu, pass);
         if(permiso){
-            ControlerForm op=new ControlerForm(usu);
+            DirectoryEntry de = new DirectoryEntry(path, domUsu, pass, AuthenticationTypes.Secure);
+            DirectorySearcher ds = new DirectorySearcher(de);
+            aux = ds.FindOne().GetDirectoryEntry().Username;
+            ControlerForm op=new ControlerForm(aux);
             this.Hide();
             op.ShowDialog();
             this.Close();
@@ -64,6 +69,7 @@ namespace LPADWithCSharp
         else
         {
             MessageBox.Show("Usuario no encontrado", "Login", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+            progressSp.Visible = false;
         }
             
         }
@@ -87,6 +93,11 @@ namespace LPADWithCSharp
                 //ya sea porque no existe el usuario o por que no son correctas
                 return false;
             }
+        }
+
+        private void metroProgressSpinner1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

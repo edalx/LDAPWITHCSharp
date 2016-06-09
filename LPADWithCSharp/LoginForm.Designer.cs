@@ -34,6 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.user = new System.Windows.Forms.TextBox();
             this.passw = new System.Windows.Forms.TextBox();
+            this.progressSp = new MetroFramework.Controls.MetroProgressSpinner();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +63,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(159, 197);
+            this.label3.Location = new System.Drawing.Point(149, 197);
             this.label3.MinimumSize = new System.Drawing.Size(250, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(250, 80);
@@ -85,12 +86,26 @@
             this.passw.Size = new System.Drawing.Size(227, 22);
             this.passw.TabIndex = 4;
             // 
+            // progressSp
+            // 
+            this.progressSp.Location = new System.Drawing.Point(422, 145);
+            this.progressSp.Maximum = 100;
+            this.progressSp.Name = "progressSp";
+            this.progressSp.Size = new System.Drawing.Size(29, 26);
+            this.progressSp.Speed = 2F;
+            this.progressSp.Spinning = false;
+            this.progressSp.TabIndex = 5;
+            this.progressSp.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.progressSp.UseSelectable = true;
+            this.progressSp.Visible = false;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.ClientSize = new System.Drawing.Size(520, 297);
+            this.Controls.Add(this.progressSp);
             this.Controls.Add(this.passw);
             this.Controls.Add(this.user);
             this.Controls.Add(this.label3);
@@ -114,6 +129,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox user;
         private System.Windows.Forms.TextBox passw;
+        private MetroFramework.Controls.MetroProgressSpinner progressSp;
 
     }
 }
