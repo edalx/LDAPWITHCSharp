@@ -1,0 +1,13 @@
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\bin\Debug\LPADWithCSharp.exe.config
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\bin\Debug\LPADWithCSharp.exe
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\bin\Debug\LPADWithCSharp.pdb
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\bin\Debug\MetroFramework.Design.dll
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\bin\Debug\MetroFramework.dll
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\obj\Debug\LPADWithCSharp.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\obj\Debug\LPADWithCSharp.Properties.Resources.resources
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\obj\Debug\LPADWithCSharp.csproj.GenerateResource.Cache
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\obj\Debug\LPADWithCSharp.exe
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\obj\Debug\LPADWithCSharp.pdb
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\obj\Debug\LPADWithCSharp.LoginForm.resources
+C:\Users\Alexander\Documents\Visual Studio 2013\Projects\LPADWithCSharp\LPADWithCSharp\obj\Debug\LPADWithCSharp.ControlerForm.resources
